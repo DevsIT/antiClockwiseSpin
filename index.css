@@ -1,0 +1,60 @@
+/*
+<ul class="seo-services-slider">
+<li>
+<div class="seo-item">
+01
+</div>
+<h4>Competitor<br>
+Analysis</h4>
+</li>
+<li>
+<div class="seo-item">
+02
+</div>
+<h4>DEEP KEYWORDS<br>
+RESEARCH</h4>
+</li>
+<li>
+<div class="seo-item">
+03
+</div>
+<h4>ON PAGE<br>
+OPTIMIZATION</h4>
+</li>
+<li>
+<div class="seo-item">
+04
+</div>
+*/
+
+
+
+
+
+
+@keyframes antiClockwiseSpin {
+	from {
+		transform: rotate(360deg)
+	}
+	to {
+		transform: rotate(0)
+	}
+}
+
+
+
+.seo-info ul li:nth-child(4) > .seo-item::before {
+	background: url(../images/step-4.png) no-repeat;
+	-webkit-animation: antiClockwiseSpin 10s normal linear infinite;
+	animation: antiClockwiseSpin 10s normal linear infinite;
+}
+
+
+.seo-info ul li > .seo-item::before {
+	content: '';
+	width: 176px;
+	height: 180px;
+	position: absolute;
+	z-index: -1;
+	background-size: cover !important;
+}
